@@ -1,0 +1,127 @@
+open_command:
+   - bshop
+   - blockshop
+size: 27
+menu_title: '&5&lInfinite Blocks Shop'
+
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.infiniteshop
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  obsidian:
+    material: obsidian
+    slot: 10
+    display_name: "&5Infinite Obsidian"
+    lore:
+      - "&7Price: &a$1,000,000" 
+    left_click_requirement:
+          requirements:
+            balance_check:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '1000000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 1000000'
+        - "[console] infiniteblock Obsidian %player_name%"
+        - '[message] &aYou have bought a &cInfinite Block!'
+    right_click_commands:
+        - '[refresh]'
+
+  waterbucket:
+    material: water_bucket
+    slot: 11
+    display_name: "&5Infinite Water Bucket"
+    lore:
+      - "&7Price: &a$1,000,000" 
+    left_click_requirement:
+          requirements:
+            balance_check:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '1000000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 1000000'
+        - "[console] infiniteblock water_bucket %player_name%"
+        - '[message] &aYou have bought a &cInfinite Block!'
+    right_click_commands:
+        - '[refresh]'
+
+  lavabucket:
+    material: lava_bucket
+    slot: 12
+    display_name: "&5Infinite Lava Bucket"
+    lore:
+      - "&7Price: &a$1,000,000" 
+    left_click_requirement:
+          requirements:
+            balance_check:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '1000000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 1000000'
+        - "[console] infiniteblock lava_bucket %player_name%"
+        - '[message] &aYou have bought a &cInfinite Block!'
+    right_click_commands:
+        - '[refresh]'
+
+  grassblock:
+    material: grass_block
+    slot: 13
+    display_name: "&5Infinite Grass Block"
+    lore:
+      - "&7Price: &a$1,000,000" 
+    left_click_requirement:
+          requirements:
+            balance_check:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '1000000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 1000000'
+        - "[console] infiniteblock grass_block %player_name%"
+        - '[message] &aYou have bought a &cInfinite Block!'
+    right_click_commands:
+        - '[refresh]'
+
+  hopper:
+    material: hopper
+    slot: 14
+    display_name: "&5Infinite Hopper"
+    lore:
+      - "&7Price: &a$1,000,000" 
+    left_click_requirement:
+          requirements:
+            balance_check:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '1000000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 1000000'
+        - "[console] infiniteblock hopper %player_name%"
+        - '[message] &aYou have bought a &cInfinite Block!'
+    right_click_commands:
+        - '[refresh]'
+
+
+      

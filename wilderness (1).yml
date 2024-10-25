@@ -1,0 +1,50 @@
+open_command:
+   - wild
+   - wilderness
+   - rtp
+size: 27
+menu_title: '&8&lWILDERNESS MENU'
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.wilderness
+      deny_commands:
+        - '[message] &8» &cYou don''t have permission to do that!'
+
+items:
+  'overworld':
+    material: GRASS_BLOCK
+    slot: 10
+    display_name: "&#00FF00&lOVERWORLD"
+    lore:
+      - "&8Random Teleport"
+      - "&r"
+      - "&fInformation"
+      - "&7│ &fClick &7to be teleported to a"
+      - "&7│ &7random location in the &#00FF00Overworld&7!"
+      - "&r"
+      - "&fWorld Border"
+      - "&7│ &f50,000 x 50,000 blocks"
+      - "&r"
+      - "&8&o(( &fLeft-Click &7to teleport! &8&o))"
+    click_commands:
+      - "[player] rtp world world"
+  
+  'nether':
+    material: NETHERRACK
+    slot: 12
+    display_name: "&#ac2020&lTHE NETHER"
+    lore:
+      - "&8Random Teleport"
+      - "&r"
+      - "&fInformation"
+      - "&7│ &fClick &7to be teleported to a"
+      - "&7│ &7random location in the &#ac2020Nether&7!"
+      - "&r"
+      - "&fWorld Border"
+      - "&7│ &f50,000 x 50,000 blocks"
+      - "&r"
+      - "&8&o(( &fLeft-Click &7to teleport! &8&o))"
+    click_commands:
+      - "[player] rtp world world_nether"

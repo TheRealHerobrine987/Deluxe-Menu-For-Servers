@@ -1,0 +1,91 @@
+open_command:
+   - raidshop
+   - rshop
+size: 27
+menu_title: '&4&lRaider Shop'
+
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.raidshop
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  Bomb:
+    material: creeper_spawn_egg
+    data: 1
+    slot: 10
+    display_name: "&cBomb"
+    lore:
+      - "&7Price: &a$25,000" 
+      - "&lWhen Using, Right Click To Activate!"
+    left_click_requirement:
+          requirements:
+            anythinghere:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '2500'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 25000'
+        - "[console] mm egg give %player_name% Bomb 1"
+        - '[message] &aYou have bought a &cBomb!'
+    right_click_commands:
+        - '[refresh]'
+
+  BigBomb:
+    material: creeper_spawn_egg
+    data: 1
+    slot: 13
+    display_name: "&c&lBig Bomb"
+    lore:
+      - "&7Price: &a$50,000"
+      - "&lWhen Using, Right Click To Activate!"
+    left_click_requirement:
+          requirements:
+            anythinghere:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '50000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 50000'
+        - "[console] mm egg give %player_name% BigBomb 1"
+        - '[message] &aYou have bought a &cBig Bomb!'
+    right_click_commands:
+        - '[refresh]'
+
+  HugeBomb:
+    material: creeper_spawn_egg
+    data: 1
+    slot: 16
+    display_name: "&4&lHuge Bomb"
+    lore:
+      - "&7Price: &a$75,000"
+      - "&lWhen Using, Right Click To Activate!"
+    left_click_requirement:
+          requirements:
+            anythinghere:           
+              type: '>='
+              input: '%vault_eco_balance%'
+              output: '75000'
+              deny_commands:
+              - '[close]'
+              - '[message] &f &8[&a►&8] &fYou do not have enough Money!'
+    left_click_commands:
+        - '[console] eco take %player_name% 75000'
+        - "[console] mm egg give %player_name% HugeBomb 1"
+        - '[message] &aYou have bought a &cHuge Bomb!'
+    right_click_commands:
+        - '[refresh]'
+
+      
+
+
+      
